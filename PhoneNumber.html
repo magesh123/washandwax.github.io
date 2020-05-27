@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wash&wax </title>
+<link rel="stylesheet" type="text/css" href="css/otpstyle.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <section class="login-page">
+  	 <form>
+	   <div class="img" style="background-image: url('images/bg.jpg')"> 	
+  	 	 <div class="box">
+			
+  	 	 	   <div class="form-head">
+  	 	 	   	  <h2>Welcome</h2>
+				   </div>
+				  
+  	 	 	   <div class="form-body">
+				  <input type="tel" id="number" placeholder="+91*********" />
+				  <div id="recaptcha-container"></div> 
+				  <p>  </p>
+				  <button type="button" onclick="phoneAuth();">Get OTP</button>
+				  
+				  <p>  </p>
+				   
+  	 	 	   	  <input type="tel" id="verificationcode" placeholder="Enter verify code" />
+  	 	 	   </div>
+  	 	 	   <div class="form-footer">
+					   
+				<button type="button" onclick="codeverify();">verify</button>
+              	 
+				</div>
+             </div>	  
+  	 	 </div>
+  	 </form>
+  </section>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+     <script>
+	  var config = {
+	    apiKey: "AIzaSyB6xauAt-Y2lnzPiebOR_gs8f1uIPfOB0s",
+	    authDomain: "try-9c03d.firebaseapp.com",
+	    databaseURL: "https://try-9c03d.firebaseio.com",
+	    projectId:"try-9c03d",
+	    storageBucket: "try-9c03d.appspot.com",
+	    messagingSenderId: "782011754273"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+  <script src="NumberAuthentication.js" type="text/javascript"></script>
+</body>
+</html>
